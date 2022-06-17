@@ -24,6 +24,8 @@ public class Asistensi extends Application {
         
         stage.setScene(scene);
         stage.show();
+        
+        System.out.println("cek");
     }
 
     /**
