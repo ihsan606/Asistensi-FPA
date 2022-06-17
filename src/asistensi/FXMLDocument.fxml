@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="597.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="asistensi.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asistensi.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <BorderPane layoutY="-1.0" prefHeight="367.0" prefWidth="597.0">
+      <BorderPane fx:id="borderPane" layoutY="-1.0" prefHeight="367.0" prefWidth="597.0">
          <left>
             <VBox prefHeight="376.0" prefWidth="105.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
                <children>
