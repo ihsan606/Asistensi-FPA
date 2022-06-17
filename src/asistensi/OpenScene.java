@@ -5,6 +5,7 @@
 package asistensi;
 
 import java.net.URL;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 
 /**
@@ -12,15 +13,21 @@ import javafx.scene.layout.Pane;
  * @author 62859
  */
 public class OpenScene {
+
     private Pane halaman;
-    
-    public Pane getPane(String namaFile){
+
+    public Pane getPane(String namaFile) {
         try {
-            URL fileHalaman = Asistensi.class.getResource("/asistensi/"+namaFile+".fxml");
+            URL fileHalaman = Asistensi.class.getResource("/asistensi/" + namaFile + ".fxml");
+            if (fileHalaman == null) {
+                throw new java.io.FileNotFoundException("halaman tidak ditemukan");
+
+            }
+            halaman = FXMLLoader.load(fileHalaman);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-                    return halaman;
+        return halaman;
 
     }
 }
