@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 
 /**
  *
@@ -21,9 +22,13 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
     
     @FXML
+    private BorderPane borderPane;
+    
+   
+    
+    @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        
     }
     
     @Override
