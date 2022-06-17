@@ -31,6 +31,7 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("cek handle button");
         System.out.println("cek lagi");
         System.out.println("cek 2");
+        System.out.println("cek 3");
        
     }
     
