@@ -30,6 +30,7 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         System.out.println("cek handle button");
         System.out.println("cek lagi");
+        System.out.println("cek 2");
        
     }
     
