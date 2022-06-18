@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="asistensi.InputViewController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asistensi.InputViewController">
    <children>
       <Label layoutX="131.0" layoutY="95.0" text="Judul" />
       <Label layoutX="131.0" layoutY="142.0" text="Pengarang" />
@@ -17,6 +16,6 @@
       <TextField fx:id="tfJumlahHalaman" layoutX="235.0" layoutY="195.0" />
       <TextField fx:id="tfPenerbit" layoutX="235.0" layoutY="245.0" />
       <Label layoutX="262.0" layoutY="28.0" text="Tambah  buku" />
-      <Button fx:id="btnTambahBuku" layoutX="271.0" layoutY="320.0" mnemonicParsing="false" text="Tambah" />
+      <Button fx:id="btnTambahBuku" layoutX="271.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonTambah" text="Tambah" />
    </children>
 </AnchorPane>

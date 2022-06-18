@@ -14,12 +14,12 @@
          <left>
             <VBox prefHeight="376.0" prefWidth="105.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Input">
+                  <Button fx:id="btnToInputView" mnemonicParsing="false" onAction="#handleButtonToInputView" prefHeight="25.0" prefWidth="112.0" text="Input">
                      <VBox.margin>
                         <Insets left="10.0" top="50.0" />
                      </VBox.margin>
                   </Button>
-                  <Button layoutX="50.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Table">
+                  <Button fx:id="btnToTableView" layoutX="50.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleButtonToTableView" prefHeight="25.0" prefWidth="109.0" text="Table">
                      <VBox.margin>
                         <Insets left="10.0" top="40.0" />
                      </VBox.margin>

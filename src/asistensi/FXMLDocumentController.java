@@ -9,8 +9,10 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -18,22 +20,32 @@ import javafx.scene.layout.BorderPane;
  */
 public class FXMLDocumentController implements Initializable {
     
+    OpenScene openScene =new OpenScene();
+    
+    
     @FXML
     private Label label;
     
     @FXML
     private BorderPane borderPane;
-    
+    @FXML
+    private Button btnToInputView;
+    @FXML
+    private Button btnToTableView;
    
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("cek handle button");
-        System.out.println("cek lagi");
-        System.out.println("cek 2");
-        System.out.println("cek 3");
-       
+    private void handleButtonToInputView(ActionEvent event) {
+        System.out.println("btnInputView clicked");
+        
+        Pane pane = openScene.getPane("InputView");
+        borderPane.setCenter(pane);
     }
+    @FXML
+    private void handleButtonToTableView(ActionEvent event){
+        System.out.println("btnTableView clicked");
+    }
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
