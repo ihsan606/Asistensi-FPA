@@ -4,6 +4,10 @@
  */
 package asistensi;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -44,6 +48,15 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void handleButtonToTableView(ActionEvent event){
         System.out.println("btnTableView clicked");
+        
+        Pane pane = openScene.getPane("TableView");
+        borderPane.setCenter(pane);
+    }
+    
+    
+    @FXML
+    private void openLink() throws URISyntaxException, IOException{
+        Desktop.getDesktop().browse(new URI("https://goo.gl/maps/fMbUDYrpfVR1ezvj8"));
     }
     
     
